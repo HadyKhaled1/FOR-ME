@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const Util = require('discord.js');
-client.on('message', ra3d => {
-var prefix = "$";
+const client = new Discord.Client();
+const prefix = '$'
                         let args = ra3d.content.split(" ").slice(1).join(" ")
 if(ra3d.content.startsWith(prefix + 'cc')) {
     if(!args) return ra3d.channel.send('`يرجا عليك كتابه رقم الالوان`');
